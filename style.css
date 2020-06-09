@@ -60,11 +60,14 @@ body {
 	margin-right: .2em;
 	color: #fff;
 }
+.card__pricing p {
+	letter-spacing: .4px;
+}
 .card__features {
 	background-color: var(--color-cyan-lighter);
 }
 .card__features__list {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 }
 .card__features__list-item {
 	margin-bottom: .3em;
@@ -84,7 +87,6 @@ body {
 
 }
 p {
-	font-size: 1.5rem;
 	line-height: 1.7;
 }
 
@@ -93,19 +95,20 @@ p {
 	color: #fff;
 	text-transform: capitalize;
 	display: inline-block;
-	width: 70%;
+	width: 80%;
 	text-align: center;
 	text-decoration: none;
 	padding: 1.5rem 2rem;
 	border-radius: .5rem;
+	box-shadow: 0 5px 5px rgba(0,0,0,.15);
 }
 
 .attribution {
-	font-size: 11px;
+	font-size: 1.4rem;
 	text-align: center;
 }
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: var(--color-cyan);
 }
 .text-cyan {
 	color: var(--color-cyan);
@@ -128,4 +131,35 @@ p {
 }
 .mb-md {
 	margin-bottom: 1.5rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:34.375em){
+	.card {
+		width: 92%;
+	}
+}
+
+@media screen and (max-width : 31.25em){
+	.card > * {
+		padding: 3rem;
+	}
+	.card {
+		margin: 7.5rem auto 5rem auto;
+		grid-template-rows: 35fr 31fr 31fr;
+		grid-template-columns: 1fr;
+	}
+	.card__pricing {
+		grid-row: 2 / 3;
+		padding-bottom: 0;
+	}
+	.card__features {
+		grid-row: 3 / 4;
+		padding-bottom: 0;
+	}
+
+	.btn {
+		width: 85%;
+	}
 }
