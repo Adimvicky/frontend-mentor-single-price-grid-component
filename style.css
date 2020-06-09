@@ -29,7 +29,7 @@ body {
 }
 .card {
 	max-width : 70rem;
-	margin : 10rem auto 10rem auto;
+	margin : 12.5rem auto 10rem auto;
 	border-radius: 1rem;
 	overflow: hidden;
 	box-shadow: 0 5px 15px rgba(0,0,0,.1);
@@ -57,6 +57,7 @@ body {
 }
 .card__pricing__price-amount {
 	font-size: 3.5rem;
+	font-weight: 700;
 	margin-right: .2em;
 	color: #fff;
 }
@@ -84,7 +85,7 @@ body {
 }
 .h3 {
 	text-transform: capitalize;
-
+	font-weight: 700;
 }
 p {
 	line-height: 1.7;
@@ -104,8 +105,9 @@ p {
 }
 
 .attribution {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	text-align: center;
+	letter-spacing: .6;
 }
 .attribution a {
 	color: var(--color-cyan);
